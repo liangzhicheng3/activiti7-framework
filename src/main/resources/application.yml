@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: activiti7-framework
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/activiti7-framework?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&nullCatalogMeansCurrent=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  #activiti7配置
+  activiti:
+    database-schema-update: true
+    history-level: full
+    db-history-used: true
